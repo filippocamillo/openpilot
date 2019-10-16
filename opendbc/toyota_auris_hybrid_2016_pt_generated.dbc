@@ -159,9 +159,6 @@ CM_ SG_ 36 YAW_RATE "verify";
 CM_ SG_ 36 STEERING_TORQUE "does not seem the steer torque, tbd";
 CM_ SG_ 37 STEER_FRACTION "1/15th of the signal STEER_ANGLE, which is 1.5 deg; note that 0x8 is never set";
 CM_ SG_ 37 STEER_RATE "factor is tbd";
-CM_ SG_ 466 ACCEL_NET "net acceleration produced by the system, given ACCEL_CMD, road grade and other factors";
-CM_ SG_ 467 LOW_SPEED_LOCKOUT "in low speed lockout, system would always disengage below 28mph";
-CM_ SG_ 467 SET_SPEED "43 kph are shown as 28mph, so conversion isnt perfect";
 CM_ SG_ 560 BRAKE_PRESSED "another brake pressed?";
 CM_ SG_ 614 ANGLE "set to measured angle when ipas control isn't active";
 CM_ SG_ 921 UI_SET_SPEED "set speed shown in UI with user set unit";
@@ -195,8 +192,6 @@ CM_ SG_ 1163 TSRSPU "always";
 CM_ SG_ 1163 TSRSPU "always 1
 2CM_ SG_ 581 GAS_PEDAL "it seems slightly filtered";
 CM_ SG_ 610 TYPE "seems 1 on Corolla, 0 on all others";
-VAL_ 513 STATE 5 "FAULT_TIMEOUT" 4 "FAULT_STARTUP" 3 "FAULT_SCE" 2 "FAULT_SEND" 1 "FAULT_BAD_CHECKSUM" 0 "NO_FAULT" ;
-VAL_ 467 LOW_SPEED_LOCKOUT 2 "low speed locked" 1 "ok" ;
 VAL_ 614 STATE 3 "enabled" 1 "disabled" ;
 VAL_ 614 DIRECTION_CMD 3 "right" 2 "center" 1 "left" ;
 VAL_ 921 CRUISE_CONTROL_STATE 0 "disabled" 2 "enabled";
